@@ -1,0 +1,232 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 20px 20px; /* Ajustez le padding pour réduire la hauteur */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optionnel : ajout d'une ombre pour améliorer la visibilité */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Limite la largeur maximale pour un meilleur alignement */
+    margin: 0 auto; /* Centre le conteneur */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 10px; /* Ajustez la marge pour éviter que les liens ne soient trop espacés */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em; /* Ajustez la taille de la police si nécessaire */
+    padding: 5px 10px; /* Ajoutez du padding pour améliorer la lisibilité */
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px; /* Réduit le padding pour permettre plus de place en haut */
+    background: url('../img/banner.jpg') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px; /* Ajoute un espace pour éviter que le contenu soit caché derrière la barre de navigation */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-logo {
+    width: 100px; /* Ajustez cette taille selon vos besoins */
+    height: auto;
+    margin-right: 20px;
+}
+
+.intro-text {
+    font-size: 1.5em; /* Augmente la taille de la police */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #fff;
+}
+
+.feature {
+    text-align: center;
+    padding: 10px;
+}
+
+.feature-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.feature-image {
+    width: 100%;
+    max-width: 200px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+}
+
+.testimonials {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacement entre les témoignages */
+}
+
+.testimonial {
+    text-align: center;
+    padding: 10px;
+    width: 30%; /* Ajustez la largeur selon vos besoins */
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.rating span {
+    color: #ffd700; /* Couleur dorée des étoiles */
+    font-size: 1.5em; /* Taille des étoiles */
+    margin-right: 2px;
+}
+
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    gap: 20px; /* Espacement entre les éléments */
+    flex-wrap: wrap; /* Permet de passer à une nouvelle ligne si l'espace est insuffisant */
+}
+
+.about-item {
+    max-width: 300px;
+    text-align: center;
+}
+
+.about-image {
+    width: 100px; /* Réduit la taille des images */
+    height: 100px; /* Hauteur fixée pour conserver la proportion circulaire */
+    border-radius: 50%; /* Rend les images circulaires */
+    object-fit: cover; /* Assure que l'image couvre le cercle sans distorsion */
+    margin: 0 auto; /* Centre l'image dans son conteneur */
+}
+
+.about-text {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.about-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .nav {
+    padding: 0;
+    list-style: none;
+}
+
+footer .nav-item {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding-top: 60px; /* Ajustez la valeur en fonction de la hauteur de votre barre de navigation */
+}
+
+#about {
+    margin-top: 80px; /* Assurez-vous que la section 'About' est bien visible */
+}
